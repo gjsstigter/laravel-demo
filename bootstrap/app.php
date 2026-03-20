@@ -17,6 +17,7 @@ return Application::configure(basePath: dirname(__DIR__))
             Request::HEADER_X_FORWARDED_PORT |
             Request::HEADER_X_FORWARDED_PROTO, at: '*');
         );
+        
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
